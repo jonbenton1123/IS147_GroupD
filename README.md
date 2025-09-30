@@ -19,3 +19,6 @@ The Soccer Team Organizer will:
 
 This project solves the problem of disorganized team communication by putting all essential information in 
 one central platform, helping coaches plan better and players stay informed and accountable.
+
+
+https://discord.gg/svFdChsA
