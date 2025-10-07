@@ -1,7 +1,7 @@
 Team Members & Roles
 
 • Iliyan Slavov – Project Manager / Frontend Developer (UI for charger map and status display)
-• Teammate 2 – Backend Developer (APIs for charger data, status updates, and user requests)
+• Jonathan Benton – Backend Developer (APIs for charger data, status updates, and user requests)
 • Arshan Dhaliwal – Database Designer (MySQL schema for chargers, users, and status logs)
 • Alemayehu (Alex) Tewodros – Tester / Documentation Writer (QA, bug tracking, documentation)
 • Quenten Conley – UX/UI Designer (wireframes, user flows, interface enhancements)
