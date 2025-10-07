@@ -3,7 +3,7 @@ Team Members & Roles
 • Iliyan Slavov – Project Manager / Frontend Developer (UI for charger map and status display)
 • Teammate 2 – Backend Developer (APIs for charger data, status updates, and user requests)
 • Teammate 3 – Database Designer (MySQL schema for chargers, users, and status logs)
-• Teammate 4 – Tester / Documentation Writer (QA, bug tracking, documentation)
+• Alemayehu (Alex) Tewodros – Tester / Documentation Writer (QA, bug tracking, documentation)
 • Teammate 5 – UX/UI Designer (wireframes, user flows, interface enhancements)
 
 Project Problem Statement:
