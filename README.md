@@ -23,3 +23,7 @@ Checks if the password contains a digit using a pre-made Java class
 Checks if the password contains a special character from the list provided using a for loop that checks every single character in the string
 
 If all checks are returned as true, then it will say the password is strong. If any of the checks are returned false, then it will output that the password does not meet the required conditions
+
+
+Task 3: Docker and Java
+For this task, we containerized a Java class and JDK using Docker. 
