@@ -26,4 +26,5 @@ If all checks are returned as true, then it will say the password is strong. If 
 
 
 Task 3: Docker and Java
+
 For this task, we containerized a Java class and JDK using Docker. 
