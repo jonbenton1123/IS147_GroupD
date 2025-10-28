@@ -27,4 +27,4 @@ If all checks are returned as true, then it will say the password is strong. If 
 
 Task 3: Docker and Java
 
-For this task, we containerized a Java class and JDK using Docker. 
+For this task, we containerized a Java class and JDK using Docker. In general, Docker is a powerful tool that is often quicker than virtualizing entire operating systems because containerization only runs exactly what you need for your use case. It can be scaled up/down seamlessly and is used in modern businesses all over the world.
