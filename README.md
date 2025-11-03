@@ -28,3 +28,8 @@ If all checks are returned as true, then it will say the password is strong. If 
 Task 3: Docker and Java
 
 For this task, we containerized a Java class and JDK using Docker. In general, Docker is a powerful tool that is often quicker than virtualizing entire operating systems because containerization only runs exactly what you need for your use case. It can be scaled up/down seamlessly and is used in modern businesses all over the world.
+
+
+Task 4: Docker and GitHub workflow
+
+GitHub and Docker can be used together to automate the entire Docker creation and update process with every change committed to a repository. This is done by creating an automatic Workflow on the GitHub repository that connects with a DockerHub account and pushes everything needed (Dockerfile, essential files, etc.) to DockerHub for anyone to use.
