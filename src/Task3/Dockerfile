@@ -13,7 +13,7 @@
                 # Run the Main class
     #            CMD java HelloWorld
 
-FROM openjdk:23
+FROM FROM openjdk:23-jdk
 WORKDIR /app
 COPY src/ /app/
 RUN javac *.java
