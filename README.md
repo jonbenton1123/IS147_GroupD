@@ -33,3 +33,13 @@ For this task, we containerized a Java class and JDK using Docker. In general, D
 Task 4: Docker and GitHub workflow
 
 GitHub and Docker can be used together to automate the entire Docker creation and update process with every change committed to a repository. This is done by creating an automatic Workflow on the GitHub repository that connects with a DockerHub account and pushes everything needed (Dockerfile, essential files, etc.) to DockerHub for anyone to use.
+
+Task 5: Generate & Publish JavaDocs Using GitHub Pages
+
+Create JavaDocs for the project, hosting them with GitHub Pages, and organizing the work using GitHub Projects. The goal is to document the codebase clearly, practice Java documentation standards, and publish a live documentation site.
+
+For example, we should follow the official Oracle JavaDoc Tool guidelines to structure our documentation, including:
+
+- Class-level descriptions
+- Method and constructor descriptions
+- @param, @return, and @throws tags where appropriate
