@@ -1,6 +1,7 @@
 /**
- * Repository interface defining how charging station and lot data is accessed.
- * Enables future replacement with a database implementation.
+ * Repository interface defining how EV charging station data is accessed.
+ * Enables the data layer to be swapped (e.g., in-memory or database-backed)
+ * without modifying higher-level logic.
  */
 
 

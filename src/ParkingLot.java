@@ -1,9 +1,10 @@
 /**
- * Represents a parking lot on campus containing EV charging stations.
+ * Represents a parking lot on UMBC’s campus that contains EV charging stations.
+ * Contains identifying information such as ID, name, and description.
  */
 
 
-public class ParkingLot {
+    public class ParkingLot {
     private int id;
     private String name;
     private String description;

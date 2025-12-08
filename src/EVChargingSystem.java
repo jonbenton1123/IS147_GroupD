@@ -1,7 +1,18 @@
 /**
- * Controls all user interaction, menu navigation, and application flow.
- * Uses StationRepository for data and AvailabilityService for logic.
+ * The main controller of the application.
+ * Handles all menu navigation, input processing, and user interactions.
+ *
+ * Responsibilities:
+ * - Display menu options
+ * - Coordinate actions between repository and services
+ * - Execute the "I'm driving now" live availability workflow
+ * - Print summaries and station details
+ *
+ * This class depends on:
+ *  - StationRepository (data access)
+ *  - AvailabilityService (business logic)
  */
+
 
 import java.util.List;
 import java.util.Scanner;
@@ -25,7 +36,12 @@ public class EVChargingSystem {
                 new SimpleAvailabilityService(stationRepository.getAllStations());
     }
 
-    public void run() {
+    /**
+     * Starts the main menu loop of the application.
+     * Continues running until the user chooses to exit.
+     */
+
+        public void run() {
         boolean running = true;
 
         while (running) {
@@ -192,7 +208,6 @@ public class EVChargingSystem {
                 + availabilityService.countAvailableStations());
     }
 
-    // ---------- NEW helper: print status counts (incl. out-of-service) ----------
 
     private void printStatusCounts() {
         int available = 0;
@@ -225,7 +240,6 @@ public class EVChargingSystem {
         }
     }
 
-    // ---------- "I'm driving now" flow (option 4) with call to printStatusCounts ----------
 
     /**
      * Simulates the user getting ready to drive to a station.

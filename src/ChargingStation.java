@@ -1,9 +1,15 @@
 /**
- * Models an EV charging station, including ID, code, lot, type, and status.
+ * Represents an EV charging station on campus.
+ * Each station includes:
+ * - an internal ID
+ * - a code (G1, L3, D2, etc.)
+ * - the lot where it is located
+ * - charger type (e.g. Level 2)
+ * - a ChargingStatus indicating real-time availability
  */
 
 
-public class ChargingStation {
+    public class ChargingStation {
     private int id;                 // internal numeric id
     private String code;            // user-facing code: G1, L3, D2, etc.
     private ParkingLot lot;

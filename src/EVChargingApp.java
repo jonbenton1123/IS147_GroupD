@@ -1,8 +1,8 @@
 /**
- * Entry point for the UMBC EV Charging Map simulation.
- * Handles user login and initializes the EVChargingSystem controller.
+ * Entry point of the UMBC EV Charging Map project.
+ * This class handles launching the application, prompting user login,
+ * and starting the EVChargingSystem controller.
  */
-
 
 import java.util.Scanner;
 

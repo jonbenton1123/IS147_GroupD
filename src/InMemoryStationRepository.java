@@ -1,6 +1,8 @@
 /**
- * In-memory implementation of StationRepository.
- * Stores 19 prebuilt chargers and randomizes their status.
+ * In-memory implementation of the StationRepository interface.
+ * Creates and stores a predefined list of 19 charging stations across
+ * three parking lots. Randomly updates station availability to simulate
+ * real-world, real-time behavior.
  */
 
 
@@ -13,6 +15,16 @@ public class InMemoryStationRepository implements StationRepository {
     private final List<ParkingLot> lots = new ArrayList<>();
     private final List<ChargingStation> stations = new ArrayList<>();
     private final Random random = new Random();
+
+    /**
+     * Randomizes the status of every charging station using the following
+     * probability model:
+     * - 60% AVAILABLE
+     * - 30% IN_USE
+     * - 10% OUT_OF_SERVICE
+     *
+     * Ensures at least one station remains AVAILABLE.
+     */
 
     public InMemoryStationRepository() {
         // Create parking lots

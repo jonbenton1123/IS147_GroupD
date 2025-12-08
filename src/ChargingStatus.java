@@ -1,10 +1,11 @@
 /**
- * Enum representing the three possible states of a charging station:
- * AVAILABLE, IN_USE, OUT_OF_SERVICE.
+ * Enum defining the three possible states of an EV charging station:
+ * - AVAILABLE: Free for use
+ * - IN_USE: Currently occupied
+ * - OUT_OF_SERVICE: Not functional
  */
 
-
-public enum ChargingStatus {
+    public enum ChargingStatus {
     AVAILABLE("Available", "Green"),
     IN_USE("In Use", "Orange"),
     OUT_OF_SERVICE("Out of Service", "Red");

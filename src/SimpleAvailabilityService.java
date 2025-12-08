@@ -1,5 +1,7 @@
 /**
- * Simple implementation of AvailabilityService using in-memory lists.
+ * Simple implementation of AvailabilityService.
+ * Performs counting, filtering, and availability lookups using an
+ * in-memory List of ChargingStation objects.
  */
 
 

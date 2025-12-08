@@ -1,7 +1,7 @@
 /**
- * Defines behaviors for determining charger availability across lots.
+ * Interface defining methods for evaluating EV charger availability.
+ * Provides filtering and counting logic independent of data storage.
  */
-
 
 import java.util.List;
 

@@ -1,6 +1,7 @@
 /**
- * Represents a system user. Includes a fake "lookup" that automatically
- * assigns a parking permit based on a randomized algorithm.
+ * Represents an UMBC system user.
+ * When logging in, the system simulates a permit lookup based on
+ * the user's campus ID by randomly assigning a parking permit type.
  */
 
 
@@ -30,8 +31,15 @@ public class User {
         return permitType;
     }
 
-    // Very basic "login" used by the terminal UI
-    public static User login(Scanner scanner) {
+    /**
+     * Prompts the user for name and campus ID.
+     * Randomly assigns a parking permit to simulate database lookup.
+     *
+     * @param scanner the Scanner used for user input
+     * @return a new User with randomly generated permit type
+     */
+
+        public static User login(Scanner scanner) {
         System.out.println("===== EV Charging System Login =====");
         System.out.print("Enter your name: ");
         String name = scanner.nextLine();
