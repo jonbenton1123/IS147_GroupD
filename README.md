@@ -1,45 +1,55 @@
-Team Members & Roles
+UMBC EV Charging Map – Terminal Simulation
+CIS-147 Object-Oriented Programming Group Project
 
-• Iliyan Slavov – Project Manager / Frontend Developer (UI for charger map and status display)
-• Jonathan Benton – Backend Developer (APIs for charger data, status updates, and user requests)
-• Arshan Dhaliwal – Database Designer (MySQL schema for chargers, users, and status logs)
-• Alemayehu (Alex) Tewodros – Tester / Documentation Writer (QA, bug tracking, documentation)
-• Quenten Conley – UX/UI Designer (wireframes, user flows, interface enhancements)
+Project Overview:
 
-Project Problem Statement:
-With the growing number of electric vehicles (EVs) on the UMBC campus, students, faculty, and staff increasingly struggle to find available charging stations. At present, there is no centralized system that allows users to conveniently view the locations of EV chargers AND check their real-time availability. This lack of information results in wasted time, unnecessary driving around campus, and inefficient use of charging resources. To solve this problem, this project will develop a software application that features an interactive map displaying all EV charging stations on campus along with their current status that shows whether they’re occupied or available. 
+UMBC provides 19 electric vehicle charging stations across three parking areas, but there is currently no system that shows real-time availability.
+This project simulates such a system in a terminal environment.
+Users can log in, view parking lots, check the status of all charging stations, refresh real-time availability, and select a station to "use" in the simulation.
 
-The system aims to enhance campus sustainability initiatives, minimize driver frustration, and encourage the continued adoption of electric vehicles by improving access to charging infrastructure.
+Team Members and Roles:
 
+Iliyan Slavov – Project Manager / UI Developer
+- Responsible for menu design, user interaction flow, login logic, and coordinating how classes work together.
+Jonathan Benton – Backend Developer
+- Responsible for core Java logic, class structure, repository implementation, randomization engine, and the "I’m driving now" workflow.
+Arshan Dhaliwal – Database Designer
+- Designed the conceptual structure of parking lots and charging stations, and helped define the repository pattern for possible future expansion to databases.
+Alemayehu (Alex) Tewodros – Tester and Documentation Writer
+- Performed testing of program functionality, validated menu flows and logic, and wrote documentation.
+Quenten Conley – UX and UI Designer
+= Worked on improving user flow, menu clarity, and overall terminal user experience.
 
-Password Validator Pseudo-code:
+Key Features:
+1. Randomized charger availability that updates each time the user selects the live-refresh option.
+The probability model is: 60 percent Available, 30 percent In Use, 10 percent Out of Service.
+The system always keeps at least one available charger.
 
-The program will take in an input from the user that is their password. Next it will check to see if it meets the requirements through the following steps:
+2. Realistic charger codes based on parking location.
+Walker Garage uses G1 through G10.
+Lot 9 uses L1 through L7.
+Stadium Lot uses D1 and D2.
 
-By default, the program sets all checks to return as true
-Checks if the password is empty (null) -> Returns false statement
-Checks if the password’s length is under 8 characters -> Returns false statement
-Checks if the password contains a digit using a pre-made Java class
-Checks if the password contains a special character from the list provided using a for loop that checks every single character in the string
+3.Simulated permit lookup.
+The user enters a name and campus ID, and the system randomly assigns a parking permit type such as Daily, Annual, or Hourly.
 
-If all checks are returned as true, then it will say the password is strong. If any of the checks are returned false, then it will output that the password does not meet the required conditions.
+4.Station selection.
+The user can choose a station code.
+The system ensures it is still available, marks it as In Use, and displays a summary.
 
+5.Object-oriented architecture using interfaces and services.
+A repository interface stores lot and station data.
+A service interface provides counting and filtering logic.
+An enum defines all charging statuses.
+A controller class manages user actions and menu navigation.
 
-Task 3: Docker and Java
+How to Run the Program:
+Open the project in IntelliJ.
+Run the main file (IS147_GD_Main.java).
+Follow the instructions shown in the terminal.
 
-For this task, we containerized a Java class and JDK using Docker. In general, Docker is a powerful tool that is often quicker than virtualizing entire operating systems because containerization only runs exactly what you need for your use case. It can be scaled up/down seamlessly and is used in modern businesses all over the world.
-
-
-Task 4: Docker and GitHub workflow
-
-GitHub and Docker can be used together to automate the entire Docker creation and update process with every change committed to a repository. This is done by creating an automatic Workflow on the GitHub repository that connects with a DockerHub account and pushes everything needed (Dockerfile, essential files, etc.) to DockerHub for anyone to use.
-
-Task 5: Generate & Publish JavaDocs Using GitHub Pages
-
-Create JavaDocs for the project, hosting them with GitHub Pages, and organizing the work using GitHub Projects. The goal is to document the codebase clearly, practice Java documentation standards, and publish a live documentation site.
-
-For example, we should follow the official Oracle JavaDoc Tool guidelines to structure our documentation, including:
-
-- Class-level descriptions
-- Method and constructor descriptions
-- @param, @return, and @throws tags where appropriate
+Additional Included Materials:
+UML diagram file
+Javadoc documentation generated from the source code
+GitHub Project Board showing tasks and responsibilities
+README file (this document)
